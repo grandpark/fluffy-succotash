@@ -5,118 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netlify Template Feedback</title>
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-      }
-
-      body {
-        background-color: #0e1e25;
-        color: #222;
-        display: grid;
-        place-content: center;
-        grid-gap: 0.5rem;
-        font-size: 18px;
-        font-family: system-ui,sans-serif;
-        line-height: 1.5;
-      }
-
-      section {
-        max-width: 60ch;
-        background-color: #fff;
-        border: 3px solid #2D3B41;
-        border-radius: 10px;
-        padding: 1.5em;
-      }
-
-      img {
-        max-width: 100%;
-      }
-
-      input {
-        font-size: 1rem;
-      }
-
-      input[type="checkbox"] {
-        height: 1rem;
-        width: 1rem;
-      }
-
-      [type="submit"] {
-        display: block;
-        background-color: #15847b;
-        padding: 1rem;
-        font-size: inherit;
-        color: white;
-        margin-top: 1rem;
-        overflow: visible;
-        border: none;
-        font-weight: bold;
-        border-radius: 5px;
-      }
-
-      textarea {
-        width: 70ch;
-        min-height: 1rem;
-      }
-
-      label {
-        font-weight: 500;
-        display: block;
-      }
-
-      .form-group {
-        display: flex;
-        gap: 0.5em;
-        margin-bottom: 8px;
-      }
-
-      .form-group p {
-        display: inline;
-        margin: 0;
-        padding: 0;
-      }
-      
-    </style>
+    <title>MegaRandom App</title>
+    <link rel="stylesheet" type="text/css" href="/flfy.css?v=5ad0f45f4799">
   </head>
   <body>
     <section>
-        <img src="img/form-banner.svg" alt="Netlify + Bejamas" />
-        <h1>Lets Support Open Source 💖</h1>
-        <p>
-          We want to say thank you so much for building with our new template!  We’re really excited about the <a href="https://bejamas.io/">Bejamas</a> + <a href="https://www.netlify.com/">Netlify</a> collaboration and we were going to celebrate it with some swag, but we realized we could put that money into supporting OSS and our ecosystem even more! After all, who needs another t-shirt or sticker?!
-        </p>
-        <p>
-          Vote for one of the Open Source projects below or enter one you would like us to donate $1000 to in celebration of building a better web together!
-        </p>
-        <p>
-          We'll be tallying and reviewing the submissions by the end of March.
-        </p>
-        <p>
-          Thanks helping the OSS community!
-        </p>
-    <form method='post' name='oss-project'><input type='hidden' name='form-name' value='oss-project' />
-      <div class="form-group">
-        <input id="three-js" type="checkbox" name="three-js" />
-        <label for="three-js">Three.js</label><p>(<a href="https://threejs.org/">project page</a>)</p>
-      </div>
-      <div class="form-group">
-        <input id="processing" type="checkbox" name="processing" />
-        <label for="processing">Processing.js</label><p>(<a href="https://processing.org">project page</a>)</p>
-      </div>
-      <div class="form-group">
-        <input id="rpi-foundation" type="checkbox" name="rpi-foundation" />
-        <label for="rpi-foundation">Raspberry Pi Foundation</label><p>(<a href="https://www.raspberrypi.org/">project page</a>)</p>
-      </div>
-      <div>
-        <label for="other">Write in any other organization by providing a URL to their project</label>
-        <input type="text" id="other" name="other"></textarea>
-      </div>
-      <button type="submit">Share with us!</button>
+        <h1><center>MegaRandom Online APP 💖</center></h1>
+        <center><button onclick="onrnd(0)" class="rndBtn" id="rndBtn">Random Number</button></center>
+      <center><button onclick="onrnd(1)" class="rndBtn" id="rndBtn">Random Password</button></center>
+      <center><button onclick="onrnd()" class="rndBtn" id="rndBtn">Random Chars</button></center>
     </form>
   </section>
+  <script src="/flfy.js">
   </body>
 </html>
